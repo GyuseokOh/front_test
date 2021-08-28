@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      function buttonclicked(){
+        $( 'h1' ).fadeIn( 1000, function() {
+            $( this ).fadeOut( 5000 );
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <button onClick="buttonclicked();">새로 고침</button>
+    <h1 style='display:none;'>Lorem ipsum dolor.</h1>
+  </body>
+</html>

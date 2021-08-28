@@ -1,0 +1,75 @@
+html{
+  width:100%;
+  height:100%;
+}
+
+body{
+  background-color: #887b7b;
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+  overflow:hidden;
+}
+
+#video-grid {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(auto-fill, 180px);
+  grid-auto-rows: 180px;
+  margin-bottom:10px;
+}
+video {
+  object-fit: cover;
+  z-index: 10;
+  position:relative;
+}
+userBox {
+  width: 180px;
+  height: 180px;
+}
+videoUserName {        
+  background-color: #4e5559;
+  display:block;
+  color: white; width: 160px;
+  text-align: center;
+}
+videoBackground {
+  background-color: black;
+  display: block;
+}
+
+#nocam__video {
+  width:0px;
+  height:0px;
+}
+
+#videoarea{
+  margin:5px 5px 5px 5px;
+  width:79.8%;
+  height:19%;
+  border-radius: 21px;
+  background-color: #ffffff;
+}
+
+.whiteboard{
+  margin-left:5px;
+  width: 79.8%;
+  height:78.5%;
+  border-radius: 21px;
+  background-color: #ffffff;
+  padding:0;
+  
+  display: block;
+}
+
+#chatarea{
+  margin:5px;
+  position:absolute;
+  top:0;
+  right:0;
+  width:19%;
+  height:98.4%;
+  border-radius: 21px;
+  background-color: #ffffff;
+}

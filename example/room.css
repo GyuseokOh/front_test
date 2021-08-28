@@ -1,0 +1,91 @@
+
+body {
+background-color:rgba(136,122,122,1);
+}
+#video-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, 180px);
+grid-auto-rows: 180px;
+}
+video {
+object-fit: cover;
+z-index: -1;
+position:relative;
+}
+userBox {
+width: 180px;
+height: 180px;
+}
+videoUserName {        
+background-color: #4e5559;
+display:block;
+color: white; width: 160px;
+text-align: center;
+}
+videoBackground {
+background-color: black;
+display: block;
+}
+.videoBox {
+width: 100%; overflow: hidden;margin: 0px auto; position: relative;
+}
+.whiteboard {
+background-color: white;
+display: block;
+width:100%;
+padding:0;
+border: 2px solid white;
+}
+.chatBox {
+background-color: #161b1f;
+margin-left:auto;
+display: block;
+width:20%;
+height:93%;
+position:absolute;
+top:0;left:0;right:0;bottom: 0;
+}
+.leftBox {
+float: left;
+width: 75%;
+height: 80%;
+}
+.footer {
+display: block;
+}
+#chatWindow {
+overflow:auto;
+height: 90%;
+top:0;
+bottom:3em;
+}
+#inputBox {
+background-color: #30383d;
+display: block;
+bottom:0;
+height: 10%;
+padding:.5em;
+margin-bottom:auto;
+border-top: 1px solid black;
+}
+.output__user {
+display: block;
+color:white;
+margin-left: 10px;
+font-size:15px;
+}
+#displayBox {
+position:absolute;
+margin-right: auto;
+}
+#userDisplay {
+width: 0px;
+height: 0px;
+}
+#info {
+color: white;
+}
+#nocam__video {
+width:0px;
+height:0px;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div id="container">
+            <form action="">
+                <h1>제스처 추가</h1>
+                <label><center><h3>엄지손가락 설정</h3></center>
+                    <select class="ThumbCurl" name="ThumbCurl">
+                        <option value="" selected hidden disabled>손가락 모양</option>
+                        <option value="0">NoCurl</option>
+                        <option value="1">HalfCurl</option>
+                        <option value="2">FullCurl</option>    
+                    </select>
+                    <select class="ThumbCurlNum" name="ThumbCurlNum">
+                        <option value="" selected hidden disabled>손가락 모양 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                    <select class="ThumbDir" name="ThumbDir">
+                        <option value="" selected hidden disabled>손가락 방향</option>
+                        <option value="0">00:00</option>
+                        <option value="4">01:30</option>
+                        <option value="3">03:00</option>
+                        <option value="6">04:30</option>
+                        <option value="1">06:00</option>
+                        <option value="7">07:30</option>
+                        <option value="2">09:00</option>
+                        <option value="5">10:30</option>    
+                    </select>
+                    <select class="ThumbDirNum" name="ThumbDirNum">
+                        <option value="" selected hidden disabled>손가락 방향 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                </label><br>
+                <label><center><h3>검지손가락 설정</h3></center>
+                    <select class="IndexCurl" name="IndexCurl">
+                        <option value="" selected hidden disabled>손가락 모양</option> 
+                        <option value="0">NoCurl</option>
+                        <option value="1">HalfCurl</option>
+                        <option value="2">FullCurl</option>    
+                    </select>
+                    <select class="IndexCurlNum" name="IndexCurlNum">
+                        <option value="" selected hidden disabled>손가락 모양 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>
+                    </select>
+                    <select class="IndexDir" name="IndexDir">
+                        <option value="" selected hidden disabled>손가락 방향</option>
+                        <option value="0">00:00</option>
+                        <option value="4">01:30</option>
+                        <option value="3">03:00</option>
+                        <option value="6">04:30</option>
+                        <option value="1">06:00</option>
+                        <option value="7">07:30</option>
+                        <option value="2">09:00</option>
+                        <option value="5">10:30</option>      
+                    </select>
+                    <select class="IndexDirNum" name="IndexDirNum">
+                        <option value="" selected hidden disabled>손가락 방향 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                </label><br>
+                <label><center><h3>중지손가락 설정</h3></center>
+                    <select class="MiddleCurl" name="MiddleCurl">
+                        <option value="" selected hidden disabled>손가락 모양</option>
+                        <option value="0">NoCurl</option>
+                        <option value="1">HalfCurl</option>
+                        <option value="2">FullCurl</option>    
+                    </select>
+                    <select class="MiddleCurlNum" name="MiddleCurlNum">
+                        <option value="" selected hidden disabled>손가락 모양 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                    <select class="MiddleDir" name="MiddleDir">
+                        <option value="" selected hidden disabled>손가락 방향</option>
+                        <option value="0">00:00</option>
+                        <option value="4">01:30</option>
+                        <option value="3">03:00</option>
+                        <option value="6">04:30</option>
+                        <option value="1">06:00</option>
+                        <option value="7">07:30</option>
+                        <option value="2">09:00</option>
+                        <option value="5">10:30</option>    
+                    </select>
+                    <select class="MiddleDirNum" name="MiddleDirNum">
+                        <option value="" selected hidden disabled>손가락 방향 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                </label><br>
+                <label><center><h3>약지손가락 설정</h3></center>
+                    <select class="RingCurl" name="RingCurl">
+                        <option value="" selected hidden disabled>손가락 모양</option>
+                        <option value="0">NoCurl</option>
+                        <option value="1">HalfCurl</option>
+                        <option value="2">FullCurl</option>    
+                    </select>
+                    <select class="RingCurlNum" name="RingCurlNum">
+                        <option value="" selected hidden disabled>손가락 모양 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                    <select class="RingDir" name="RingDir">
+                        <option value="" selected hidden disabled>손가락 방향</option>
+                        <option value="0">00:00</option>
+                        <option value="4">01:30</option>
+                        <option value="3">03:00</option>
+                        <option value="6">04:30</option>
+                        <option value="1">06:00</option>
+                        <option value="7">07:30</option>
+                        <option value="2">09:00</option>
+                        <option value="5">10:30</option>    
+                    </select>
+                    <select class="RingDirNum" name="RingDirNum">
+                        <option value="" selected hidden disabled>손가락 방향 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                </label><br>
+                <label><center><h3>새끼손가락 설정</h3></center>
+                    <select class="PinkyCurl" name="PinkyCurl">
+                        <option value="" selected hidden disabled>손가락 모양</option>
+                        <option value="0">NoCurl</option>
+                        <option value="1">HalfCurl</option>
+                        <option value="2">FullCurl</option>    
+                    </select>
+                    <select class="PinkyCurlNum" name="PinkyCurlNum">
+                        <option value="" selected hidden disabled>손가락 모양 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                    <select class="PinkyDir" name="PinkyDir">
+                        <option value="" selected hidden disabled>손가락 방향</option>
+                        <option value="0">00:00</option>
+                        <option value="4">01:30</option>
+                        <option value="3">03:00</option>
+                        <option value="6">04:30</option>
+                        <option value="1">06:00</option>
+                        <option value="7">07:30</option>
+                        <option value="2">09:00</option>
+                        <option value="5">10:30</option>    
+                    </select>
+                    <select class="PinkyDirNum" name="PinkyDirNum">
+                        <option value="" selected hidden disabled>손가락 방향 인식 강도</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>    
+                    </select>
+                </label><br>
+                <button onclick="checkval()" type="submit">제출</button>
+                <button onclick='javascript:location.href="/home/signup"'>홈으로</button>
+            </form>
+        </div>
+    </center>
+
+    <script>
+        function checkval(){
+            var fingers=["Thumb","Index","Middle","Ring","Pinky"]
+            var arr=["Curl","CurlNum","Dir","DirNum"];
+            for(var i=0;i<4;i++){
+                for(var j=0;j<4;j++){
+                    var cur="."+fingers[i]+arr[j];
+                    console.log(cur)
+                    if($(cur+" option:selected").val()==""){
+                        alert("모든 옵션을 선택해 주세요")
+                        return false;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
